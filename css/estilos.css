@@ -232,7 +232,24 @@ tfoot{
     color: white;
 }
 
+.imgsede{
+    width: 400px;
+    border-radius: 20%;
+}
 
+.sedefila{
+    display:   grid;
+    grid-template-columns: repeat(auto-fit, 600px);
+    grid-auto-rows: 1000px;
+    padding-left: 3rem;
+}
 
-
+.sede2{
+    background-color: brown;
+    border-radius: 8px ;
+    margin: 4rem;
+    padding: 2rem;
+    height: 30rem;
+    box-shadow: 4px 4px 9px brown;
+}
 
