@@ -67,8 +67,9 @@ img{
 /* UNA MATRIZ CON 4 COLUMAS, FR ENCAJA LAS FIGURAS */
 .ProductosFila1{
     display:   grid;
-    grid-template-columns: repeat(4,1fr); 
-    width: 100%; 
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-auto-rows: 600px;
+    padding-left: 3rem;
 }
 
 .producto{
@@ -76,14 +77,14 @@ img{
     border-radius: 8px ;
     margin: 3rem;
     padding: 2rem;
-    height: 30rem;
+    height: 25rem;
     box-shadow: 4px 4px 9px brown;
 }
 
 .producto_blanco{
     background-color: white;
     border-radius: 8px;
-    height: 15rem;
+    height: 10rem;
     object-fit: contain;
     padding: 1rem;
 }
@@ -96,12 +97,18 @@ img{
     text-align: center;
 }
 .nombre{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 800;
 }
 .precio{
     font-size: 2rem;
     font-weight: 500;
+}
+
+.direccion{
+    color: rgb(143, 133, 133);
+    font-size: 1.5rem;
+    /* font-weight: 300; */
 }
 
 .contenedor2{
@@ -189,6 +196,42 @@ label{
     margin-top: 8px;
 
 }
+
+#main-container{
+	margin: 60px auto;
+	width: 800px;
+}
+
+table{
+	background-color: white;
+	text-align: left;
+	/* border-collapse: collapse; */
+	width: 90%;
+}
+
+th, td{
+	padding: 30px;
+}
+
+thead{
+    background-color: rgba(165, 42, 42, 0.787);
+	border-bottom: solid 5px black;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+td img{
+    width: 100px;
+}
+
+tfoot{
+    background-color: rgba(165, 42, 42, 0.787);
+    color: white;
+}
+
 
 
 
