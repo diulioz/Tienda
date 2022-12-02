@@ -49,27 +49,33 @@ body{
     font-family: "Tahoma"; /* fuente de la letra*/
     text-align: center;
     background-color: rgb(231, 231, 231);
+    align-items: center;
+    justify-content: center;
 }
 
 img{
-    width: 50%;
+    width: 80%;
 }
 
 * {
     box-sizing: border-box;
 }
 .contenedor{
-    max-width: 120rem;
+    /* max-width: 150rem; */
     margin: 0 auto;
+
     
 }
 
 /* UNA MATRIZ CON 4 COLUMAS, FR ENCAJA LAS FIGURAS */
 .ProductosFila1{
+    margin: 0 auto;
     display:   grid;
     grid-template-columns: repeat(auto-fit, 350px);
-    grid-auto-rows: 600px;
+    grid-auto-rows: 500px;  /* separcion entre cuadros rojos verticalmente */
     padding-left: 3rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .producto{
@@ -77,16 +83,16 @@ img{
     border-radius: 8px ;
     margin: 3rem;
     padding: 2rem;
-    height: 25rem;
+    height: 27rem;
     box-shadow: 4px 4px 9px brown;
 }
 
 .producto_blanco{
     background-color: white;
     border-radius: 8px;
-    height: 10rem;
+    height: 15rem;
     object-fit: contain;
-    padding: 1rem;
+    padding: 0.7rem;
 }
 
 /* Aqui doy estilos a tres clases */
@@ -207,6 +213,8 @@ table{
 	text-align: left;
 	/* border-collapse: collapse; */
 	width: 90%;
+    align-items: center;
+    justify-content: center;
 }
 
 th, td{
@@ -233,18 +241,22 @@ tfoot{
 }
 
 .imgsede{
-    width: 400px;
+    width: 100%;
     border-radius: 20%;
 }
 
 .sedefila{
-    display:   grid;
+    display: grid;
     grid-template-columns: repeat(auto-fit, 600px);
-    grid-auto-rows: 1000px;
+    grid-auto-rows: 550px;
     padding-left: 3rem;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .sede2{
+    margin: 60px auto;
     background-color: brown;
     border-radius: 8px ;
     margin: 4rem;
