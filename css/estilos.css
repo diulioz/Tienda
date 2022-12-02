@@ -1,0 +1,195 @@
+.link_activo{ /* se aplica a las etiquetas clasificadas en esta clase*/
+    text-decoration: underline;
+}
+
+.img_principal{
+    width: 40%;
+    box-shadow: 4px 4px 9px black;
+    border-radius: 5px;
+}
+
+nav a:hover{ /* cuando se pone el mause por encima de la etiqueta */
+    background-color: rgb(187, 167, 152);
+}
+
+h2:hover{
+    background-color: rgb(187, 167, 152);
+}
+
+/* *{
+    margin: 5px; /* aplica margen externa a todos los elementos*/
+/*} */
+
+nav a{ /* reune los hipervinculos en una barra de navegación */
+    display: inline-block;
+    width: 150px;
+    background-color: rgb(216, 193, 177);
+    color: black;
+    border: 2px rgb(87, 38, 38) solid; /* Grosor, Color Estilo_ solid, dotted, inset, double ... */
+    text-align: center;
+    text-decoration: none; /* quitarle la linea a los hipervinculos*/
+    border-radius: 8px 0px 8px 0px ; /* hacer el borde del boton redondito, entre más grande el # más redondo. parametros: esquina sup-izq, sup-der, inf-der, inf-izq*/
+    padding: 15px; /* margen interna*/
+    margin: 15px; /* margen externa*/
+    box-shadow: 4px 4px 9px black; /* sombreado, parametros: extensión der, extension abajo, desenfoque, color*/
+    font-size: 18px; /* tamaño de la letra*/
+}
+
+h1{
+    color: white; /* color de la letra*/
+    background-color: rgb(100, 51, 44); /* color del fondo*/
+    text-align: center; /* alineación */
+}
+
+h2{
+    color: rgb(85, 48, 40);
+}
+
+body{
+    font-family: "Tahoma"; /* fuente de la letra*/
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+}
+
+img{
+    width: 50%;
+}
+
+* {
+    box-sizing: border-box;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    
+}
+
+/* UNA MATRIZ CON 4 COLUMAS, FR ENCAJA LAS FIGURAS */
+.ProductosFila1{
+    display:   grid;
+    grid-template-columns: repeat(4,1fr); 
+    width: 100%; 
+}
+
+.producto{
+    background-color: brown;
+    border-radius: 8px ;
+    margin: 3rem;
+    padding: 2rem;
+    height: 30rem;
+    box-shadow: 4px 4px 9px brown;
+}
+
+.producto_blanco{
+    background-color: white;
+    border-radius: 8px;
+    height: 15rem;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+/* Aqui doy estilos a tres clases */
+.nombre,.precio, .textosobreimg{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+.nombre{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.precio{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.contenedor2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contenedor2 figure{
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 15px 25px brown;
+    cursor: pointer;
+}
+
+.contenedor2 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.contenedor2 figure .texto{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: burlywood;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedor2 figure:hover > .texto{
+    opacity: 0.5;
+    visibility: visible;
+}
+
+.contenedor2 figure:hover > .texto h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.contenedor2 figure .texto h3{
+    color: white;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+.contenedor2 figure:hover > img{
+    transform: scale(1.3);
+}
+
+.contenedor2 figure .texto p{
+    color: white;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+form{
+    background-color: white;
+    /* padding es una margen interna, engorda las cosas */
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    border: 4px black double;
+    border-radius: 10px;
+    text-align: left;
+}
+
+label{
+    display: block;
+    width: 200px;
+    font-weight: bold;
+    /* font-weight bold texto en negrilla */
+    color: brown;
+    margin-top: 8px;
+
+}
+
+
+
+

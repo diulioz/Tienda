@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comercializadora de Cueros</title>
+    <link rel="stylesheet" href="css/estilos.css"> <!-- link css -->
+</head>
+<body>
+    <h1>Cueros AB</h1> <!-- h1 -->
+    <h2>Comercializadora nariñense</h2> <!-- h2 -->
+    <nav> <!-- barras de navegación-->
+        <a href="index.html">Inicio</a> <!-- a , hipervinculo --> 
+        <a href="registro.html" class="link_activo">Registro</a> <!-- href="#" significa que no lleva a ningún lado-->
+        <a href="compras.html">Compras</a>
+        <a href="sedes.html">Sedes</a>
+        <a href="otro.html">Otro</a>
+    </nav> <!--nav-->
+    <br>
+    <form>
+        <label>Identificación</label>
+        <input type="number" name="txtId" id="txtId" required min="0">
+        <!-- required necesita un minimo, dato de obligatorio registro -->
+        <label>Nombre</label>
+        <input type="text" name="txtNombre" id="txtNombre" required>
+        <label>Correo</label>
+        <input type="email" name="txtCorreo" id="txtCorreo" required placeholder="nombre@dominio">
+        <!-- placeholder texto de ayuda, se muestra en gris en la caja -->
+        <label>Fecha de Registro</label>
+        <input type="date" name="txtFecha" id="txtFecha" required>
+        <!-- min, minimo - max, maximo - value, valor por defecto -->
+        <label>Edad</label>
+        <input type="number" name="txtEdad" id="txtEdad" required min="18" max="80" value="18">
+        <!-- <hr> es la linea divisoria -->
+        
+        <label>Genero</label>
+        <!-- checked por defecto se marcara femenino -->
+        <input type="radio" name="optGenero" id="optF" value="F" checked>Femenino <br>
+        <input type="radio" name="optGenero" id="optM" value="M" >Masculino <br>
+        
+        <!-- esto es una lista desplegable -->
+        <label>Estado Civil</label>
+        <select name="lstEtado" id="lstEtado">
+            <option value="1">Casado(a)</option>
+            <option value="2">Solero(a)</option>
+            <option value="3">Union Libre</option>
+        </select>
+
+        <label>Tiene casa propia</label>
+        <input type="checkbox" name="chkCasa" id="chkCasa" value="S">Si
+
+        <hr>
+        <input type="submit" value="Guardar"> <!-- Envio de datos al servidor, puede validar, organizar y enviar -->
+        <input type="reset" value="Limpiar">
+        <input type="button" value="Créditos">
+    </form>
+</body>
+</html>
